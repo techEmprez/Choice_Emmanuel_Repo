@@ -7,7 +7,73 @@
   </head>
 
   <body>
-    <p>Hello World, we are software developers!</p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form class="survey-form__content" id="survey-form">
+      <div class="survey-form__field">
+        <label id="name-label" for="name">Name</label>
+        <input
+          class="survey-form__input-not-button"
+          id="name"
+          type="text"
+          name="name"
+          maxlength="40"
+          size="40"
+          placeholder="Enter you name"
+          required
+        />
+      </div>
+      <div class="survey-form__field">
+        <label id="email-label" for="email">Email</label>
+        <input
+          class="survey-form__input-not-button"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter you email"
+          required
+        />
+      </div>
+      <div class="survey-form__field">
+        <label id="number-label" for="age">Age(optional)</label>
+        <input
+          class="survey-form__input-not-button"
+          id="number"
+          type="number"
+          name="age"
+          min="5"
+          max="120"
+          placeholder="Age"
+        />
+      </div>
+      <div class="survey-form__field">
+        <label for="role">Current Role</label>
+        <select id="dropdown" name="role" required></select>
+      </div>
+
+      <div class="survey-form__field" id="seniority"></div>
+      <div class="survey-form__field" id="technologies"></div>
+      <div class="survey-form__field">
+        <label for="description">Job Description</label>
+        <textarea
+          class="survey-form__input-not-button"
+          name="description"
+          placeholder="Describe your current role"
+        ></textarea>
+      </div>
+      <div class="survey-form__submit-button-container">
+        <button
+          class="survey-form__field--submit-button"
+          id="submit"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
